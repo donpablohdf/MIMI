@@ -1,0 +1,79 @@
+.login-body{
+    padding-top: 200px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 17vh;
+}
+.login_form{
+    height: 100%;
+}
+.login-espacio{
+  border: 2px solid black;
+}
+.login_icon{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.login_email{
+
+}
+.login_input{
+    height:50px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 25px;
+    border-style: none;
+}
+::placeholder{
+    color:#9C2C77;
+}
+.login_icono_email{
+    position: absolute;
+    padding-left: 32px;
+    padding-top: 10px;
+    font-size: 25px;
+    color: #9C2C77;
+}
+.login_icono_password{
+    position: absolute;
+    font-size: 25px;
+    color: #9C2C77;
+    padding-left: 32px;
+    padding-top: 10px;
+}
+.login_button_body{
+    margin-top: 10px;
+    max-height: max-content;
+    height:31%;
+    width: 100%;
+}
+.login_button{
+    position: relative;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #9C2C77;
+    color: white;
+    font-size: 30px;
+    border:none;
+}
+.login_registro{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.login_registro_link{
+    font-size: 20px;
+    color: #9C2C77;
+    font-weight: bold;
+}
+.signup_password_coincide{
+   font-weight: 800; 
+}
+.login_email{
+    font-size: 20px;
+    color: red;
+    font-weight: 800;
+    text-transform: uppercase;
+}

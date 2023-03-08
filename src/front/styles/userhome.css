@@ -1,0 +1,177 @@
+.userhome_body_rellena_perfil{
+    height: 90vh;
+}
+.userhome_rellena_perfil_h1{
+    padding-top: 20vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #9C2C77; 
+     
+    font-size: 60px; 
+    font-weight: 800; 
+    line-height: 60px;
+}
+.userhome_rellena_perfil_boton_contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.userhome_body{
+    padding-top: 120px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 17vh;
+}
+.userhome_h1{
+    margin-bottom: 40px;
+    color: #9C2C77; 
+     
+    font-size: 60px; 
+    font-weight: 800; 
+    line-height: 60px;
+}
+.userhome_imagen{
+    max-width: 300px;
+}
+.userhome_headers{
+    font-size: 30px;
+    font-weight: 800;
+    color:#E14D2A;
+    margin-bottom: 2px;
+    
+}
+.userhome_parrafos{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.userhome_modifica_datos{
+    margin-top: 30px;
+}
+.userhome_home, .userhome_modifica, .userhome_baja, .userhome_reservas{
+    border: none;
+    border-radius: 4px;
+    display: inline-flex;
+	justify-content: center;
+	align-items: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+    padding: 20px 50px 20px 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.userhome_home{
+    background-image: linear-gradient(to bottom, #CD104D, rgba(223, 20, 131, 0.445));
+}
+.userhome_home:hover {
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #CD104D;
+    transform: scale(1.2);
+  }
+.userhome_iconos{
+    margin: 0px 30px 0 10px;
+}
+
+.userhome_icono_default{
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    display: block;
+    transition: opacity .3s, transform .3s;
+}
+.userhome_icono_hover{
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    display: block;
+    transition: opacity .3s, transform .3s;
+    transform: rotate(-180deg) scale(.5);
+    opacity: 0;
+}
+.userhome_home:hover .userhome_icono_hover{
+    transform: rotate(0deg) scale(1.2);
+    opacity: 1; 
+}
+.userhome_home:hover .userhome_icono_default{
+    transform: rotate(180deg) scale(1);
+	opacity: 0;
+}
+.userhome_modifica{
+    background-image: linear-gradient(to bottom, #E14D2A, rgba(240, 115, 6, 0.473))
+}
+.userhome_modifica:hover{
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #E14D2A;
+    transform: scale(1.2);
+}
+.userhome_modifica:hover .userhome_icono_hover{
+    transform: rotate(0deg) scale(1.2);
+    opacity: 1; 
+}
+.userhome_modifica:hover .userhome_icono_default{
+    transform: rotate(180deg) scale(1);
+	opacity: 0;
+}
+.userhome_reservas{
+    background-image: linear-gradient(to bottom, #9C2C77, rgba(201, 9, 89, 0.322));
+}
+.userhome_reservas:hover {
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #9C2C77;
+    transform: scale(1.2);
+}
+.userhome_reservas:hover .userhome_icono_hover{
+    transform: rotate(0deg) scale(1.2);
+    opacity: 1; 
+}
+.userhome_reservas:hover .userhome_icono_default{
+    transform: rotate(180deg) scale(1);
+	opacity: 0;
+}
+.userhome_baja{
+    background-image: linear-gradient(to bottom, #ee1414, rgba(155, 57, 57, 0.24))
+}
+.userhome_baja:hover{
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #ee1414;
+    transform: scale(1.2);
+}
+.userhome_baja:hover .userhome_icono_hover{
+    transform: rotate(0deg) scale(1.2);
+    opacity: 1; 
+}
+.userhome_baja:hover .userhome_icono_default{
+    transform: rotate(180deg) scale(1);
+	opacity: 0;
+}
+.file-select {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .file-select::before {
+    background-color: linear-gradient(to bottom, #9C2C77, rgba(201, 9, 89, 0.322));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: 'Cambiar foto'; /* testo por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .file-select input[type="file"] {
+    opacity: 0;
+    width: 105px;
+    height: 32px;
+    display: inline-block;
+  }
+  
+  #src-file1::before {
+    content: 'Cambiar foto';
+  }

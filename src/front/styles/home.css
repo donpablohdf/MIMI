@@ -1,0 +1,265 @@
+/*
+    home.css: This website contains selectors only used in home.css
+
+    All pages share the styles on index.css but you should create 
+    one more css for each page that will contain the selected used 
+    on that page only (the ones not reused in other pages).
+*/
+
+/*CARRUSEL PRINCIPAL*/
+
+.carousel-caption {
+  top:30%;
+}
+
+.display-1{
+  font-weight:800
+}
+.imagen_carrusel_principal{
+  filter:brightness(60%);
+}
+
+/*FIN CARRUSEL PRINCIPAL*/
+/*ENTRETEXTO*/
+.display-2{
+  font-weight: 800;
+  color: #FD841F;
+
+}
+/*FIN ENTRETEXTO*/
+/*CARRUSEL GUIAS*/
+.carrusel{
+    padding-top: 15%;
+    margin-bottom: 150px;
+}
+.carta{
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.imagen_carta{
+    opacity: 1;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 100%;
+}
+
+.cuerpo_carta{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.carta:hover .imagen_carta{
+    opacity: 0.3;
+}
+.carta:hover .cuerpo_carta{
+    opacity:1;
+}
+
+.nombre_carta{
+color: Black;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+}
+.ciudad_carta{
+    color: Black;
+    font-size: 35px;
+    position: absolute;
+    top: 85%;
+    left:10%;
+    transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+}
+
+.valoracion_carta{
+    color: yellow;
+    font-size: 35px;
+    font-weight: 900;
+    position: absolute;
+    top: 85%;
+    left:70%;
+    transform: translate(-10%, -10%);
+    -ms-transform: translate(-10%, -10%);
+}
+
+.lineUp {
+    animation: 3s anim-lineUp ease-out 1;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(60%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+  /*FIN CARRUSEL GUIAS*/
+
+  /*ACTIVIDADES DESTACADAS*/
+.ultimas-actividades{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ultimas-actividades h4{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: 900;
+  font-size: 50px;
+  color: #FD841F;
+}
+.contenedor-actividades{
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.imagen_actividad{
+  display: block;
+}
+.eventos-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.eventos-area > span {
+  padding: 8px 15px;
+  font-size: 12px;
+  width: 65px;
+  font-weight: 800;
+  color: #fff;
+  height: 50px;
+  background-color: #9C2C77;
+  text-align: center;
+}
+
+.eventos-area > span:last-child {
+  background-color: #FD841F;
+  display: flex;
+}
+
+.icono-actividad {
+  font-size: 30px;
+}
+
+.actividades h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.actividades {
+  height: 100%;
+}
+.actividades h5 {
+  color: #FD841F
+}
+.actividades h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #9C2C77;
+  margin-bottom: 15px;
+}
+
+.actividades p {
+  font-size: 14px;
+  margin-bottom: 0 px;
+}
+
+.actividades:hover {
+  background-color: #FD841F;
+  transition: all 0.6s
+}
+.actividades:hover.actividades h5 {
+  color: #fff;
+}
+
+/*FIN ACTIVIDADES DESTACADAS*/
+
+/*COMIENZO COMENTARIOS*/
+.opiniones{
+  padding-bottom: 150px;
+}
+.texto-opiniones{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.texto-opiniones h1{
+  font-weight: 900;
+
+  color: #9C2C77;
+}
+.opiniones-area {
+	width: 100%;
+}
+.comillas{
+  font-size: 35px;
+	opacity: 0.7;
+  color:#FD841F;
+	margin-bottom: 25px;
+}
+.carrusel-testimonios{
+  display: inline;
+	float: left;
+	margin-top: 60px;
+	width: 100%;
+}
+.carrusel-slide{
+	text-align: center;
+}
+.carrusel-slide p{
+  color:#fff;
+}
+.opinion-imagen{
+  border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin-top: 15px;
+	display: inline-block;
+}
+.opinion-nombre{
+  margin-bottom: 5px;
+	color: #fff;
+	line-height: 1;
+	margin-top: 25px;
+	letter-spacing: 1px;
+}
+.opinion-ciudad{
+  color: #fff;
+	font-size: 14px;
+}
+.card-text{
+  color: #9C2C77;
+}
+/*.over{
+  width: 265px;
+  height: 179px;
+  overflow: hidden;
+}*/
+
+/*FINAL COMENTARIOS*/
